@@ -1,9 +1,19 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+
+import './App.css';
+
+import Sidebar from './components/Sidebar';
+import Video from './components/Video';
+
+import store from './store';
 
 function App() {
   return (
-    <div>
-    </div>
+    <Provider store={store}>
+      <Video />
+      <Sidebar />
+    </Provider>
   );
 }
 
