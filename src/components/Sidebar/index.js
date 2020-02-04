@@ -7,14 +7,14 @@ import './styles.css';
 import * as CourseActions from '../../store/actions/course'; 
 
 const Sidebar = ({ modules, toggleLesson }) => (
-  <aside>
+  <aside id="sidebar">
     { modules.map(module => (
       <div key={module.id}>
-        <strong>{module.title}</strong>
+        <strong>* {module.title}</strong>
         <ul>
           { module.lessons.map(lesson => (
             <li key={lesson.id}>
-              {lesson.title}
+              - {lesson.title}
               <button onClick={() => toggleLesson(module, lesson)}>Assistir</button>
             </li>
           ))}

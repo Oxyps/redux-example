@@ -1,0 +1,20 @@
+#video {
+  width: 300px;
+  background: #FFF;
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+
+#video strong {
+  font-size: 25px;
+  text-align: left;
+  display: block;
+  color: #333;
+}
+
+#video span {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #332;
+}

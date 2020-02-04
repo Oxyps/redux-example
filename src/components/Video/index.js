@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import './styles.css';
 
 const Video = ({ activeModule, activeLesson }) => (
-  <div>
-    <strong>Modulo {activeModule.title}</strong>
-    <span>Aula {activeLesson.title}</span>
+  <div id="video">
+    <strong>Modulo: {activeModule.title}</strong>
+    <span>Aula: {activeLesson.title}</span>
   </div>
 );
 
